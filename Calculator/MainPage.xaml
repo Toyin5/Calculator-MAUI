@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="5,0"
+            VerticalOptions="Center">
+            <Image
+                Source="calculator_icon.jpg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="100"
+                HorizontalOptions="Center" 
+                />
+            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+                <Entry
+                    Keyboard="Numeric"
+                    ClearButtonVisibility="WhileEditing"
+                    Completed="OnEntryCompleted"
+                    Placeholder="Enter some numbers..."
+                    WidthRequest="200"
+                    x:Name="entry"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Center" HorizontalOptions="Center" >
+                <Button 
+                    x:Name="oneButton" 
+                    Text="1"          
+                    SemanticProperties.Hint="1"
+                    Clicked="OnButtonClicked" 
+                    />
+                <Button 
+                    x:Name="twoButton" 
+                    Text="2"          
+                    SemanticProperties.Hint="2"
+                    Clicked="OnButtonClicked" 
+                    />
+                <Button 
+                    x:Name="threeButton" 
+                    Text="3"          
+                    SemanticProperties.Hint="3"
+                    Clicked="OnButtonClicked" 
+                    />
+                <Button 
+    x:Name="addButton" 
+    Text="+"          
+    SemanticProperties.Hint="Addition"
+    Clicked="OnButtonClicked" 
+    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Center" HorizontalOptions="Center" >
+                <Button 
+            x:Name="fourButton" 
+            Text="4"          
+            SemanticProperties.Hint="4"
+            Clicked="OnButtonClicked" 
+            />
+                <Button 
+        x:Name="fiveButton" 
+        Text="5"          
+        SemanticProperties.Hint="5"
+        Clicked="OnButtonClicked" 
+        />
+                <Button 
+        x:Name="sixButton" 
+        Text="6"          
+        SemanticProperties.Hint="6"
+        Clicked="OnButtonClicked" 
+        />
+                <Button 
+x:Name="subtractButton" 
+Text="-"          
+SemanticProperties.Hint="Subtraction"
+Clicked="OnButtonClicked" 
+/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Center" HorizontalOptions="Center" >
+                <Button 
+    x:Name="sevenButton" 
+    Text="7"          
+    SemanticProperties.Hint="7"
+    Clicked="OnButtonClicked" 
+    />
+                <Button 
+x:Name="eightButton" 
+Text="8"          
+SemanticProperties.Hint="8"
+Clicked="OnButtonClicked" 
+/>
+                <Button 
+x:Name="nineButton" 
+Text="9"          
+SemanticProperties.Hint="9"
+Clicked="OnButtonClicked" 
+/>
+                <Button 
+x:Name="divideButton" 
+Text="/"          
+SemanticProperties.Hint="Division"
+Clicked="OnButtonClicked" 
+/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Center" HorizontalOptions="Center" >
+                <Button 
+    x:Name="deleteButton" 
+    Text="DEL"          
+    SemanticProperties.Hint="Delete a Digit"
+    Clicked="Delete" 
+    />
+                <Button 
+x:Name="zeroButton" 
+Text="0"          
+SemanticProperties.Hint="0"
+Clicked="OnButtonClicked" 
+/>
+                <Button 
+x:Name="equalsButton" 
+Text="="          
+SemanticProperties.Hint="EqualsTo"
+Clicked="Submit" 
+/>
+                <Button 
+x:Name="multiplyButton" 
+Text="*"          
+SemanticProperties.Hint="Multiplication"
+Clicked="OnButtonClicked" 
+/>
+            </HorizontalStackLayout>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
